@@ -1,1 +1,1 @@
-Inpired by : https://github.com/Bob-Technicien-pro/CashFactory
+Inspired by: https://github.com/Bob-Technicien-pro/CashFactory
