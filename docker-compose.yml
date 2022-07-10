@@ -1,0 +1,17 @@
+version: "3"
+services:
+    honeygain:
+        image: honeygain/honeygain
+        build:
+          context: .
+          dockerfile: Dockerfile
+          args:
+            # tou-accept: tou-get
+            email: honeygain@pprios.com
+            pass: xxxxxxxxxx
+            device: anibalpc1
+    p2pclient1:
+      image: peer2profit/peer2profit_x86_64:latest
+      environment:
+        P2P_EMAIL: shadowmanyd@gmail.com
+      restart: always
