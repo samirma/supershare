@@ -2,7 +2,7 @@
 
 device=$(tr -dc 'a-zA-Z' < /dev/urandom | fold -w 5 | head -1)
 
-echo Hello $email  $pass  $device 
+echo Hello pawns: $email_pawns  honeygain: $email_honeygain  $device 
 
 pwd 
 
