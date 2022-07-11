@@ -1,10 +1,16 @@
 FROM ubuntu
 
+ENV email_p2p email
 
-ENV email John
-ENV pass passss
+ENV email_pawns email
+ENV pass_pawns pass
+
+ENV email_honeygain email
+ENV pass_honeygain pass
+
 
 COPY p2pclient.deb .
+COPY pawns-cli .
 
 COPY start.sh .
 
@@ -20,7 +26,7 @@ RUN apt install libxcb-icccm4  libxcb-image0  libxcb-keysyms1 libxcb-render-util
 RUN dpkg -i p2pclient.deb
 
 
-RUN wget -c https://download.iproyal.com/pawns-cli/latest/linux_x86_64/pawns-cli
+#RUN wget -c https://download.iproyal.com/pawns-cli/latest/linux_x86_64/pawns-cli
 RUN chmod +x pawns-cli
 
 COPY ./libhg.so* /usr/lib/
