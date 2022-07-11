@@ -1,6 +1,6 @@
 FROM ubuntu
 
-ENV device Name
+
 ENV email John
 ENV pass passss
 
