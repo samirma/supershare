@@ -2,11 +2,11 @@ FROM ubuntu
 
 ENV email_p2p email
 
-ENV email_pawns email
-ENV pass_pawns pass
+#ENV email_pawns email
+#ENV pass_pawns pass
 
-ENV email_honeygain email
-ENV pass_honeygain pass
+#ENV email_honeygain email
+#ENV pass_honeygain pass
 
 
 COPY p2pclient.deb .
@@ -36,8 +36,4 @@ COPY honeygain ./
 CMD ["/start.sh"]
 
 
-
-
 # clear ; docker build --no-cache -t s . ; docker run -e email=samirgmail s
-
-

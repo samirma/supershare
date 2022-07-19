@@ -7,12 +7,8 @@ echo Hello pawns: $email_pawns  honeygain: $email_honeygain  $device
 pwd 
 
 echo "p2pclient"
-p2pclient -l $email_p2p &
+p2pclient -l $email_p2p
 
 echo "pawns-cli"
-./pawns-cli -email=$email_pawns -password=$pass_pawns -device-name=$device -accept-tos &
-
-
-echo "Honeyearn"
-./honeygain -tou-accept -email $email_honeygain -pass $pass_honeygain -device $device
+#./pawns-cli -email=$email_pawns -password=$pass_pawns -device-name=$device -accept-tos &
 
